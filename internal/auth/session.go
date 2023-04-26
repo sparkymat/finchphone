@@ -29,7 +29,7 @@ func LoadUsernameFromSession(cfg ConfigService, c echo.Context) (string, error) 
 
 	email, err := ValidateJWTString(cfg.JWTSecret(), token)
 	if err != nil {
-		return "", err //nolint:wrapcheck
+		return "", err
 	}
 
 	if email == nil {
