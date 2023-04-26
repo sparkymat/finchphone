@@ -1,0 +1,3 @@
+{% func Home() %}
+  <div id="finchphone-app"></div>
+{% endfunc %}
